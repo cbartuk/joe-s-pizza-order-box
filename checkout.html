@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pizza Siparişi</title>
+    <meta charset="UTF-8" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,200&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/reboot.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+        @font-face {
+          font-family: "mightyspidey";
+          src: url("mightyspidey.woff2") format("woff2"),
+            url("mightyspidey.woff") format("woff");
+          font-weight: 500;
+          font-style: normal;
+          font-display: swap;
+        }
+      </style>
+  </head>
+  <body>
+    <header class="header">
+      <img src="images/Joe's_Pizza_logo.png" width="150" alt="logo" />
+      <h1>Joe's Pizza</h1>
+      <p class="spidey">Spiderman's Best Pizza</p>
+    </header>
+    <section class="pizza-order-app">
+      <h1>Payment Page</h1>
+
+        <form class="payment" action="success.html">
+
+                <label for="fullname">Name Surname</label>
+                <input
+                pattern="[A-Za-z]{5,50}"
+                type="text"
+                id="fullname"
+                name="fullname"
+                placeholder="Your Name&Surname"
+                required
+                />
+                <br />
+
+                <label for="email">E-Mail</label>
+                <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your E-mail Adress"
+                required
+                />
+                <br />
+
+                <label for="phone">Phone</label>
+                <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="+1 408 XXX XXXX"
+                required
+                />
+                <br />
+
+                <label for="city">City</label>
+                <select id="city">
+                <option value="newyork">New York</option>
+                <option value="chicago">Chicago</option>
+                <option value="washington">Washington DC</option>
+                <option value="newjersey">New Jersey</option>
+                <option value="maryland">Maryland</option>
+                </select>
+
+                <br />
+
+                <label for="address">Adress</label>
+                <textarea
+                type="text"
+                id="address"
+                name="address"
+                placeholder="Your Adress..."
+                required
+                ></textarea>
+
+                <hr />
+
+                <label for="card">Card Numbers</label>
+                <input
+                type="text"
+                id="card"
+                name="card"
+                placeholder="Your Card No"
+                minlength="16"
+                maxlength="16"
+                required
+                />
+                <br />
+
+                <label for="expiry">Expiration Date<label>
+                <input
+                type="text"
+                id="expiry"
+                name="expiry"
+                placeholder="01/22"
+                minlength="5"
+                maxlength="5"
+                required
+                />
+                <br />
+
+                <label for="cvv">CVV</label>
+                <input
+                type="text"
+                id="cvv"
+                name="cvv"
+                placeholder="CVV"
+                minlength="3"
+                maxlength="3"
+                pattern="[0-9]{3}"
+                required
+                />
+
+                <hr />
+
+            <button type="submit" role="button">Pay</button>
+        </form>
+    </section>
+    <a class="back-button" href="javascript: history.back(-1)">Back</a>
+  </body>
+</html>

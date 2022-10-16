@@ -1,0 +1,225 @@
+/***************************************************************
+    Author: Can Bartu Kilic
+    AKA: SenatorMaul
+    Date: 15/10/2022
+****************************************************************/
+html {
+  font-size: 16px;
+}
+
+body {
+  background-image: url("../images/meduium-pizza.jpg");
+  max-width: 2000px;
+  font-family: "Poppins", sans-serif;
+}
+
+/******************************* HEADER ************************************/
+.header {
+  background-color: #618c03;
+  text-align: center;
+  padding: 2rem;
+}
+
+.header h1 {
+  font-family: "Satisfy", cursive;
+  font-size: 3.125rem;
+  color: #f28705;
+  text-shadow: 2px 2px 2px #060d0b;
+  margin-top: -1.8rem;
+}
+
+.header .spidey {
+  font-size: 18px;
+  font-weight: 500;
+  color: #bf3604;
+  margin-top: -14px;
+  font-family: "mightyspidey" !important;
+  font-style: normal;
+}
+
+.spidey-pizza {
+  opacity: 0;
+  position: absolute;
+  z-index: 5;
+  transition: 0.7s;
+  width: 150px;
+}
+
+.spidey:hover ~ .spidey-pizza {
+  opacity: 1;
+  width: 450px;
+}
+
+/******************************** APP ****************************************/
+.pizza-order-app {
+  background-color: #8c0303;
+  border-radius: 0.5rem;
+  margin: 3.75rem auto 0;
+  padding: 2rem;
+  width: 42.5rem;
+}
+
+.pizza-order-app form {
+  background-color: #323e40;
+  border-radius: 0.5rem;
+  padding: 2rem 1rem;
+}
+
+.pizza-order-app h1 {
+  color: #bf3604;
+  text-align: center;
+}
+
+.pizza-types {
+  display: block;
+  font-size: 0;
+  width: 100%;
+}
+
+.pizza-types .pizza-type-item {
+  font-size: 1.2rem;
+  display: inline-block;
+  width: 33.333%;
+  margin: 30px 0;
+}
+
+.pizza-types .pizza-type-item label,
+.pizza-types .pizza-type-item button {
+  display: block;
+}
+
+.pizza-types .pizza-type-item label {
+  color: white;
+}
+
+.pizza-type-item img {
+    width: 150px;
+    border-radius: 19px;
+    height: 100px;
+}
+
+/******************************** BUTTONS *************************************/
+
+button[role="button"] {
+  cursor: pointer;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+button[role="button"]:hover {
+  background-color: #f25c05;
+  color: #f2f2f2;
+}
+
+button[role="button"]:focus {
+  outline: 0;
+  background-color: #f2f2f2;
+  color: #f25c05;
+}
+
+button[type="submit"] {
+  background-color: #f25c05;
+  color: #f2f2f2;
+  border: 2px solid #f25c05;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  width: 50%;
+}
+
+button[type="submit"]:hover {
+  background-color: #f2f2f2;
+  color: #f25c05;
+}
+
+/******************************** PASTRY ***************************************/
+
+.select-pastry-form {
+  text-align: center;
+}
+
+.select-pastry-form label {
+  border: 2px solid #3e5902;
+  color: #3e5902;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+}
+
+.select-pastry-form label:hover {
+  background-color: white;
+  cursor: pointer;
+}
+
+.select-pastry-form input[name="pastry"] {
+  display: none;
+}
+
+.select-pastry-form input[name="pastry"]:checked + label {
+  background-color: #3e5902;
+  color: #f2a74b;
+}
+
+.select-pastry-form .select-pastry-item {
+  display: inline-block;
+  margin: 30px 0;
+}
+
+/******************************** SIZE **************************************/
+
+.select-size-form {
+  text-align: center;
+}
+
+.select-size-form label {
+  border: 2px solid #99f7ab;
+  color: #99f7ab;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+}
+
+.select-size-form label:hover {
+  background-color: white;
+  cursor: pointer;
+}
+
+.select-size-form input[name="size"] {
+  display: none;
+}
+
+.select-size-form input[name="size"]:checked + label {
+  background-color: #99f7ab;
+  color: #498467;
+}
+
+.select-size-form .select-size-item {
+  display: inline-block;
+  margin: 30px 0;
+}
+
+/*********************** CHECKOUT ************************************************/
+
+.payment label {
+  width: 130px;
+  display: inline-block;
+  color: white;
+}
+
+#expiry {
+  width: 52px;
+}
+
+#cvv {
+  width: 52px;
+}
+
+/**************************** back button ***************************************/
+
+.back-button {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  z-index: 50;
+  background-color: #99f7ab;
+  color: #3e5902;
+  padding: 10px;
+  border-radius: 19px;
+}
