@@ -1,0 +1,24 @@
+{
+  "name": "odev-order-to-pizza",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node script.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cbartuk/joe-s-pizza-order-box.git"
+  },
+  "author": "Can Bartu Kilic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cbartuk/joe-s-pizza-order-box/issues"
+  },
+  "homepage": "https://github.com/cbartuk/joe-s-pizza-order-box#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.2",
+    "webpack": "^5.74.0"
+  }
+}
