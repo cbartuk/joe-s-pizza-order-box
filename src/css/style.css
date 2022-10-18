@@ -93,9 +93,9 @@ body {
 }
 
 .pizza-type-item img {
-    width: 150px;
-    border-radius: 19px;
-    height: 100px;
+  width: 150px;
+  border-radius: 19px;
+  height: 100px;
 }
 
 /******************************** BUTTONS *************************************/
@@ -223,3 +223,68 @@ button[type="submit"]:hover {
   padding: 10px;
   border-radius: 19px;
 }
+
+/*************************** footer ************************************************/
+
+footer {
+  background-color: #323e40;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  z-index: 50;
+  position: relative;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.social-icon {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  text-indent: -9999px;
+  display: block;
+  transition: .3s;
+  background-size: 406px;
+  border-radius: 15px;
+}
+
+.socials li{
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.socials li:last-child{
+  margin-right: 0;
+}
+
+.socials {
+  list-style: none;
+}
+
+.instagram {
+  background-image: url(../images/social-medias.jpg);
+  background-position: 634px -119px;
+}
+
+.twitter {
+  background-image: url(../images/social-medias.jpg);
+  background-position: 749px -119px;
+}
+
+.linkedin {
+  background-image: url(../images/social-medias.jpg);
+  background-position: 982px -119px;
+}
+
+.linkedin:hover {
+  background-position: 982px -62px;
+}
+
+.twitter:hover {
+  background-position: 749px -62px;
+}
+
+.instagram:hover {
+  background-position: 634px -62px;
+}
+
+
