@@ -1,11 +1,124 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title></title>
-    <link rel="stylesheet" href="dist/main.css" />
+    <title>Pizza Siparişi</title>
+    <meta charset="UTF-8" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,200&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/css/reboot.css" />
+    <link rel="stylesheet" href="src/css/style.css" />
+
+    <style>
+      @font-face {
+        font-family: "mightyspidey";
+        src: url("mightyspidey.woff2") format("woff2"),
+          url("mightyspidey.woff") format("woff");
+        font-weight: 500;
+        font-style: normal;
+        font-display: swap;
+      }
+    </style>
   </head>
   <body>
-    <h1>Hello World!</h1>
-    <script src="dist/main.js"></script>
+    <header class="header">
+      <img src="src/images/Joe's_Pizza_logo.png" width="150" alt="logo" />
+      <h1>Joe's Pizza</h1>
+      <p class="spidey">Spiderman's Best Pizza</p>
+      <img
+        class="spidey-pizza"
+        src="src/images/pizza-with-spiderman.jpg"
+        alt="spideys pizza"
+      />
+    </header>
+    <section class="pizza-order-app">
+      <form>
+        <h1>Choice Your Pizza</h1>
+
+        <div class="pizza-types">
+          <div class="pizza-type-item">
+            <img src="src/images/Neapolitan.jpg" alt="neapolitian">
+            <label for="neapolitan">Neapolitan Pizza</label>
+            <button
+              type="submit"
+              role="button"
+              formaction="select-pastry.html"
+              id="neapolitan"
+            >
+              Choice
+            </button>
+          </div>
+
+          <div class="pizza-type-item">
+            <img src="src/images/chicago.jpg" alt="chicago">
+            <label for="chicago">Chicago Pizza</label>
+            <button
+              type="submit"
+              id="chicago"
+              role="button"
+              formaction="select-pastry.html"
+            >
+              Choice
+            </button>
+          </div>
+
+          <div class="pizza-type-item">
+            <img src="src/images/newyork.jfif" alt="nypd">
+            <label for="ny-style">New York-Style Pizza</label>
+            <button
+              type="submit"
+              id="ny-style"
+              role="button"
+              formaction="select-pastry.html"
+            >
+              Choice
+            </button>
+          </div>
+
+          <div class="pizza-type-item">
+            <img src="src/images/Sicilian.jpg" alt="sicilian">
+            <label for="sicilian">Sicilian Pizza</label>
+            <button
+              type="submit"
+              id="sicilian"
+              role="button"
+              formaction="select-pastry.html"
+            >
+              Choice
+            </button>
+          </div>
+
+          <div class="pizza-type-item">
+            <img src="src/images/California.jpg" alt="california">
+            <label for="california">California Pizza</label>
+            <button
+              type="submit"
+              id="california"
+              role="button"
+              formaction="select-pastry.html"
+            >
+              Choice
+            </button>
+          </div>
+
+          <div class="pizza-type-item">
+            <img src="src/images/detroit.jfif" alt="detroit-became-a-human">
+            <label for="detroit">Detroit Pizza</label>
+            <button
+              type="submit"
+              id="detroit"
+              role="button"
+              formaction="select-pastry.html"
+            >
+              Choice
+            </button>
+          </div>
+        </div>
+      </form>
+    </section>
   </body>
 </html>

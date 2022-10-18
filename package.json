@@ -19,7 +19,9 @@
   "homepage": "https://github.com/cbartuk/joe-s-pizza-order-box#readme",
   "dependencies": {
     "bootstrap": "^5.2.2",
-    "webpack": "^5.74.0"
+    "mini-css-extract-plugin": "^2.6.1",
+    "webpack": "^5.74.0",
+    "yarn": "^1.22.19"
   },
   "devDependencies": {
     "webpack-cli": "^4.10.0",
